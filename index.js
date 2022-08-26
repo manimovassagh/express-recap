@@ -9,7 +9,7 @@ const users=reader("user.json")
 
 app.get("/", async (req, res, next) => {
 
-    axios.get("https://jsonplaceholder.typicode.com/photos")
+    axios.get("https://jsonplaceholder.typicode.com/albums")
            .then(data => res.status(200).send(data.data))
            .catch(err => res.status(404).send(err));
  
